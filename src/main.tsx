@@ -3,10 +3,10 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
+import TicTacToe from "./components/Game/TicTacToe/TicTacToe";
 import HomePage from "./components/HomePage/HomePage";
 import BordeauxQuizz from "./components/Projets/Bordeaux-Quizz/BordeauxQuizz";
 import Netflux from "./components/Projets/Netflux/Netflux";
-import ToDoList from "./components/Projets/ToDoList/ToDoList";
 import "./index.css";
 const router = createBrowserRouter([
 	{
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/todolist",
-				element: <ToDoList />,
+				element: <TicTacToe />,
 			},
 			{
 				path: "/projet3",
