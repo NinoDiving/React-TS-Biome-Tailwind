@@ -3,6 +3,7 @@ import "./HangMan.css";
 export default function HangMan() {
 	const [isLetters, setIsLetters] = useState<string[]>([""]);
 	const words = ["Hello", "World"];
+	const answer = [""];
 	// Faire système de input qui relie les letters click à l'input puis lier son tableau de words à l'input
 
 	return (
